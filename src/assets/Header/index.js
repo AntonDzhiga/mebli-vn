@@ -1,7 +1,11 @@
-import main_img from './main photo.jpg';
-import fur_v from './IMG-V.jpg';
+import header_first_image from './main_first.png';
+import header_second_image from './main_second.png';
+import main_img from './IMG-V.jpg';
+import fur_v from './main photo.jpg';
 
 export {
-    main_img,
-    fur_v
+    header_first_image,
+    header_second_image,
+    fur_v,
+    main_img
 }

@@ -4,7 +4,7 @@
   padding: 20px;
 }
 
-.about-us__contain {
+.about-us__container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,32 +12,23 @@
   flex-wrap: wrap; /* Дозволяє елементам переноситись */
 }
 
+.about-us__image-first,
+.about-us__image-second {
+  width: 30%; /* Картинки займають 30% ширини */
+}
 
-.about-us__text-container {
-  width: calc(100% - 40%);
+.about-us__text-contain {
+  width: 40%; /* Текст займає 40% ширини */
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  order: 2;
 }
-
-.about-us__image-first {
-  width: 20%;
-  order: 1;
-}
-
-.about-us__image-second {
-  width: 20%;
-  order: 3;
-}
-
 
 .about-us__image-first img,
 .about-us__image-second img {
   width: 100%;
-  height: 500px;
   object-fit: cover;
 }
 
@@ -57,33 +48,58 @@
   color: #333;
   line-height: 1.5;
 }
-  
-  /* Адаптивні стилі для менших екранів */
-  
-@media (max-width: 1440px) {
-}
-@media (max-width: 1200px) {
-}
-@media (max-width: 992px) {
-}
 
+/* Адаптивні стилі */
 @media (max-width: 768px) {
+  .about-us__container {
+    flex-direction: column; /* Текст зверху */
+    align-items: center;
+  }
 
+  .about-us__text-contain {
+    width: 100%; /* Текст займає всю ширину */
+    order: 1; /* Текст зверху */
+  }
 
-  .about-us__image-first,
+  .about-us__image-first {
+    width: 30%; /* Картинки залишаються в ряд і займають по 48% ширини */
+    order: 2; /* Картинки під текстом */
+  }
+
   .about-us__image-second {
-    width: 50%;
-    order: 2;
+    width: 30%; /* Картинки залишаються в ряд і займають по 48% ширини */
+    order: 2; /* Картинки під текстом */
+    display: none;
   }
 
   .about-us__image-first img,
   .about-us__image-second img {
-    height: auto; /* Автоматична висота для збереження пропорцій */
+    height: auto; /* Автоматична висота */
+  }
+
+  .about-us__container {
+    display: flex;
+    flex-direction: column; /* Розташування основних блоків */
+    align-items: center;
+  }
+
+  .about-us__images {
+    display: flex;
+    flex-direction: row; /* Горизонтальне розташування картинок */
+    justify-content: space-between;
+    gap: 10px; /* Відступ між картинками */
+    width: 100%; /* Картинки займають всю ширину */
+    order: 2;
   }
 }
 
-@media (max-width: 600px) {
-}
 @media (max-width: 480px) {
+  .about-us__image-first,
+  .about-us__image-second {
+    width: 50%; /* Картинки залишаються в рядок */
+  }
+
+  .about-us__images {
+    gap: 5px; /* Менший відступ між картинками */
+  }
 }
-  

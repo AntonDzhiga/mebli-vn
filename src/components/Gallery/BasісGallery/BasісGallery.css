@@ -1,0 +1,47 @@
+.basіс-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+  
+.gallery-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+  
+.gallery-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+  
+.gallery-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.group-1 {
+    flex-direction: column;
+    gap: 20px;
+}
+  
+.gallery-item img {
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+  
+.group-0 .gallery-item img,
+.group-2 .gallery-item img {
+    width: 450px;
+    height: 650px;
+}
+  
+.group-1 .gallery-item img {
+    width: 250px;
+    height: 315px;
+}
+  

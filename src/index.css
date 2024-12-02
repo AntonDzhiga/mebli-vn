@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* phone: 480px, // Small phones
+phone-large: 600px, // Large phones
+tablet: 768px, // Tablets
+tablet-large: 992px, // Larger tablets/small laptops
+desktop: 1200px, // Desktops
+desktop-large: 1440px // Large desktops */

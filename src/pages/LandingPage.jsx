@@ -1,14 +1,16 @@
 import React from 'react'
-import Navigation from '../components/Navigation/Navigation';
 import AboutUs from '../components/AboutUs/AboutUs';
 import OurService from '../components/OurService/OurService';
+import Gallery from '../components/Gallery/Gallery';
+import Header from '../components/Header/Header';
 
 const LandingPage = () => {
   return (
     <>
-      <Navigation/>
+      <Header/>
       <AboutUs/>
       <OurService/>
+      <Gallery/>
     </>
   )
 }
