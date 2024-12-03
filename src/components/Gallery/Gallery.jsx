@@ -2,7 +2,10 @@ import React from "react";
 import {
   torg_left,
   torg_showcase,
-  home_g_up
+  home_up,
+  home_left,
+  home_right,
+  home_down_second
 } from "../../assets/FurnitureImages";
 import BasісGallery from "./BasісGallery/BasісGallery";
 
@@ -12,12 +15,12 @@ const Gallery = () => {
       title: "Домашні меблі",
       subtitle: "Під замовлення",
       images: [
-        [{ src: torg_showcase, alt: "Меблі 1" }],
+        [{ src: home_left, alt: "Меблі 1" }],
         [
-          { src: home_g_up, alt: "Меблі 2" },
-          { src: torg_showcase, alt: "Меблі 3" },
+          { src: home_up, alt: "Меблі 2" },
+          { src: home_down_second, alt: "Меблі 3" },
         ],
-        [{ src: torg_showcase, alt: "Меблі 4" }],
+        [{ src: home_right, alt: "Меблі 4" }],
       ],
     },
     {
