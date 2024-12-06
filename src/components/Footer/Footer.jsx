@@ -1,20 +1,41 @@
-import React from 'react'
+import React from 'react';
+import "./Footer.css";
+import { instagram } from "../../assets/Footer";
 
 const Footer = () => {
   return (
     <div className='footer'>
-        <div className='contact'>
-            <div className='title'>sdasd</div>
-            <div className='telephone'>dsadsad</div>
-            <div className='email'>asdas</div>
-            <div className='social'></div>
+      <div className='footer__contact'>
+        <div className='footer__title'>
+          <h4 className='footer__title-heading'>Звертайтесь до нас</h4>
+          <ul className='footer__contact-list'>
+            <li className='footer__contact-item'>(123) 456-7890</li>
+            <li className='footer__contact-item'>hello@reallygreatsite.com</li>
+            <li className='footer__contact-item'><img src={instagram} alt="Instagram"/></li>
+          </ul>
         </div>
-        <div className='Working hours'>
-            <span className='Working hours title'></span>
-            <span className='Working hours description'></span>
-        </div>
+      </div>
+      <div className='footer__working-hours'>
+        <h4 className='working-hours__heading'>Робочий час</h4>
+        <table className='working-hours__table'>
+          <tbody>
+            <tr className='working-hours__row'>
+              <td className='working-hours__cell'>Пн - Пт</td>
+              <td className='working-hours__cell'>9:00 - 19:00</td>
+            </tr>
+            <tr className='working-hours__row'>
+              <td className='working-hours__cell'>Сб</td>
+              <td className='working-hours__cell'>10:00 - 16:00</td>
+            </tr>
+            <tr className='working-hours__row'>
+              <td className='working-hours__cell'>Нд</td>
+              <td className='working-hours__cell'>Вихідний</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default Footer;
