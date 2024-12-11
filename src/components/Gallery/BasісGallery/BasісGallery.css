@@ -1,72 +1,82 @@
-.basіч-gallery {
+.basіс-gallery {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
-
-.gallery-header {
+    
+  .gallery-header {
     text-align: center;
-    margin-bottom: 20px;
-}
-
-.gallery-content {
+    margin-bottom: 10px;
+  }
+  
+  .gallery-content {
     display: flex;
     gap: 20px;
     justify-content: center;
 }
-
-.gallery-group {
+  
+  .gallery-group {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.group-1 {
     flex-direction: column;
-    gap: 20px;
 }
-
-.gallery-item img {
-    display: block;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.group-0 .gallery-item img,
-.group-2 .gallery-item img {
-    width: 450px;
-    height: 650px;
-}
-
-.group-1 .gallery-item img {
-    width: 250px;
-    height: 315px;
-}
-
-/* Медіа-запит для малих екранів */
-@media (max-width: 768px) {
+  
+  .gallery-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+    position: relative;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
     .gallery-content {
-        flex-direction: column;
-        align-items: center;
+      display: flex;
+      flex-direction: column;
     }
-
-    .gallery-header {
-        margin-bottom: 10px;
+  
+    .gallery-group.group-1 {
+      order: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
     }
-
-    .group-0, .group-1, .group-2 {
-        width: 100%;
+  
+    .gallery-group.group-1 .gallery-item {
+      flex: 1 1 48%; /* Дві картинки в ряд */
+      max-width: 48%;
+      margin-bottom: 10px;
     }
-
-    .group-0 .gallery-item img,
-    .group-2 .gallery-item img {
-        width: 100%;
-        height: auto;
+  
+    .gallery-group.group-0 {
+      order: 2;
+      position: relative;
     }
-
-    .group-1 .gallery-item img {
-        width: 100%;
-        height: auto;
+  
+    .gallery-group.group-0 .gallery-item {
+      flex: 1 1 48%; /* Дві картинки в ряд */
+      max-width: 48%;
+      min-width: 48%; /* Додано для стабільності */
+      position: relative;
+      left: 0;
     }
-}
+  
+    .gallery-group.group-2 {
+      order: 3;
+      position: relative;
+    }
+  
+    .gallery-group.group-2 .gallery-item {
+      flex: 1 1 48%; /* Дві картинки в ряд */
+      max-width: 48%;
+      min-width: 48%; /* Додано для стабільності */
+      position: relative;
+      left: 0;
+    }
+  }
+  

@@ -44,7 +44,7 @@ const Gallery = () => {
           { src: torg_left, alt: "Офіс 2" },
           { src: torg_showcase, alt: "Офіс 3" },
         ],
-        [{ src: torg_showcase, alt: "Офіс 4" }],
+        [{ src: torg_showcase, alt: "Офіс 4" }]
       ],
     },
   ];

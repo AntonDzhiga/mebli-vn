@@ -7,13 +7,13 @@
 .about-us__container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 90%;
-  flex-wrap: wrap; /* Дозволяє елементам переноситись */
+  flex-wrap: wrap;
 }
 
 .about-us__text-contain {
-  width: 40%; /* Текст займає 40% ширини */
+  width: 40%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -21,29 +21,30 @@
   justify-content: center;
 }
 
-.about-us__title {
-  font-size: 24px;
+.about-us__title-desktop {
+  font-size: 74px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .about-us__subtitle {
-  font-size: 18px;
+  font-size: 34px;
   color: #555;
 }
 
 .about-us__description {
-  font-size: 16px;
+  font-size: 24px;
   color: #333;
   line-height: 1.5;
 }
 
 .about-us__image-desktop {
-  width: 30%; /* Картинки займають 30% ширини */
+  width: 25%;
 }
 
 .about-us__image-desktop img {
   width: 100%;
+  height: 800px;
   object-fit: cover;
 }
 
@@ -55,28 +56,30 @@
 /* Адаптивні стилі */
   @media (max-width: 992px) {
     .about-us__container {
-      flex-direction: column; /* Перемикання на вертикальний макет */
+      flex-direction: column;
       align-items: center;
     }
   
     .about-us__text-contain {
-      width: 100%; /* Текст займає всю ширину */
-      order: 1; /* Текст зверху */
+      width: 100%;
+      order: 1;
     }
   
     .about-us__image_tablet-visible-tablet {
       display: flex;
-      width: 100%; /* Картинки займають всю ширину */
-      order: 2; /* Картинки під текстом */
-      gap: 10px; /* Відступ між картинками */
+      justify-content: center;
+      width: 100%;
+      order: 2;
+      gap: 50px;
     }
   
     .about-us__image_tablet-visible-tablet img {
       width: 100%;
+      height: 700px;
       object-fit: cover;
     }
   
     .about-us__image-desktop {
-      display: none; /* Ховаємо зображення для великих екранів */
+      display: none;
     }
   }

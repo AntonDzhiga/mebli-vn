@@ -6,11 +6,28 @@
   justify-content: center;
 }
 
+.services__heading{
+  font-size: 72px;
+}
 /* Обгортка для тексту та зображень */
 .services__wrapper {
   display: flex;
   justify-content: space-between; /* Простір між елементами */
   gap: 20px;
+}
+
+/* Стиль для списку */
+.services__list-container {
+  width: 100%; /* Список займає всю ширину */
+}
+
+.services__list {
+  font-size: 34px;
+  display: flex;
+  flex-direction: column; /* Список по замовчуванню вертикальний */
+  gap: 10px;
+  padding: 0;
+  margin: 0;
 }
 
 /* Стиль для зображень */
@@ -27,19 +44,6 @@
   height: 500px;
 }
 
-/* Стиль для списку */
-.services__list-container {
-  width: 100%; /* Список займає всю ширину */
-}
-
-.services__list {
-  display: flex;
-  flex-direction: column; /* Список по замовчуванню вертикальний */
-  gap: 10px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
 
 /* Медіа-запит для маленьких екранів */
 @media (max-width: 992px) {
