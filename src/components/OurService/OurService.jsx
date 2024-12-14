@@ -5,7 +5,8 @@ import { torg_left } from "../../assets/FurnitureImages";
 const OurService = () => {
   return (
     <div className="services">
-        <h3 className="services__heading">Послуги</h3>
+        <h2 className="services__heading">Послуги</h2>
+        <h3 className="services__subtitle">Ми пропонуємо</h3>
         <div className="services__wrapper">
             <div className="services__list-container">
                 <ul className="services__list">

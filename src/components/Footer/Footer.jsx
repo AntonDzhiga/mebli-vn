@@ -7,7 +7,7 @@ const Footer = () => {
     <div className='footer'>
       <div className='footer__contact'>
         <div className='footer__title'>
-          <h4 className='footer__title-heading'>Звертайтесь до нас</h4>
+          <h2 className='footer__title-heading'>Звертайтесь до нас</h2>
           <ul className='footer__contact-list'>
             <li className='footer__contact-item'>(123) 456-7890</li>
             <li className='footer__contact-item'>hello@reallygreatsite.com</li>
@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='footer__working-hours'>
-        <h4 className='working-hours__heading'>Робочий час</h4>
+        <h2 className='working-hours__heading'>Робочий час</h2>
         <table className='working-hours__table'>
           <tbody>
             <tr className='working-hours__row'>

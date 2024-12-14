@@ -1,14 +1,29 @@
+@import '../../shared/styles/variables/fonts.css';
+
 /* Основний стиль для контейнера */
 .services {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 70px;
 }
 
 .services__heading{
-  font-size: 72px;
+  font-size: var(--font-size-title);
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-style: normal;
+  font-kerning: none;
+  text-decoration: none;
 }
+
+.services__subtitle{
+  font-size: var(--font-size-subtitle);
+  margin: 5px 0 30px;
+}
+
 /* Обгортка для тексту та зображень */
 .services__wrapper {
   display: flex;
@@ -22,7 +37,7 @@
 }
 
 .services__list {
-  font-size: 34px;
+  font-size: var(--font-size-description);
   display: flex;
   flex-direction: column; /* Список по замовчуванню вертикальний */
   gap: 10px;
@@ -49,16 +64,20 @@
 @media (max-width: 992px) {
   .services__wrapper {
     flex-direction: column; /* Текст та зображення по черзі */
-    align-items: center; /* Центруємо по вертикалі */
+    align-items: center; /* Центрування всіх елементів */
   }
+
   .services__list-container {
-    text-align: center;
+    display: flex; /* Використовуємо flexbox для центрування */
+    justify-content: center; /* Горизонтальне центрування */
+    width: 100%; /* Забезпечення повної ширини */
   }
+
   .services__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Список на два стовпці */
-    gap: 15px;
-    width: 100%; /* Список займає всю ширину */
+    display: flex; /* Використовуємо flexbox */
+    flex-direction: column; /* Вертикальний список */
+    align-items: center; /* Центруємо список по горизонталі */
+    gap: 10px; /* Простір між пунктами списку */
   }
 
   .services__images {
@@ -66,3 +85,20 @@
     width: 100%; /* Зображення займають всю ширину */
   }
 }
+
+
+@media (max-width: 600px) {
+  .services__images {
+    display: flex; /* Використовуємо flexbox */
+    flex-direction: column; /* Розташовуємо зображення вертикально */
+    gap: 20px; /* Відступ між зображеннями */
+    align-items: center; /* Центруємо зображення */
+    width: 100%; /* Забезпечуємо повну ширину контейнера */
+  }
+
+  .services__image-item img {
+    width: 300px; /* Зображення займає всю ширину контейнера */
+    height: 500px; /* Пропорційна висота */
+  }
+}
+

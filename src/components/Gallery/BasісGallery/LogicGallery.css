@@ -1,0 +1,103 @@
+.basic-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.gallery-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.gallery-content {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-item {
+  flex: 1 1 100%;
+  max-width: 100%;
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Стилі для кожного зображення, використовуючи унікальні класи */
+.image-0-0 {
+  width: 50%; /* Перше зображення в першій групі */
+}
+
+.image-0-1 {
+  width: 40%; /* Друге зображення в першій групі */
+}
+
+.image-1-0 {
+  width: 60%; /* Перше зображення в другій групі */
+}
+
+.image-1-1 {
+  width: 30%; /* Друге зображення в другій групі */
+}
+
+.image-2-0 {
+  width: 70%; /* Перше зображення в третій групі */
+}
+
+.image-2-1 {
+  width: 25%; /* Друге зображення в третій групі */
+}
+
+/* Адаптивні стилі для маленьких екранів */
+@media (max-width: 768px) {
+  .gallery-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .gallery-group {
+      width: 100%;
+  }
+
+  .gallery-group.group-0,
+  .gallery-group.group-1,
+  .gallery-group.group-2 {
+      display: flex;
+      flex-direction: row; /* Розташовуємо картинки в ряд */
+      justify-content: space-between;
+      gap: 10px; /* Між картинками буде проміжок */
+  }
+
+  .gallery-item {
+      flex: 1 1 48%; /* Встановлюємо ширину елементів так, щоб вони займали по 48% */
+      max-width: 48%; /* Обмежуємо ширину */
+      position: relative;
+  }
+
+  .gallery-item img {
+      width: 100%;
+  }
+
+  /* Зміна порядку елементів на маленьких екранах */
+  .gallery-group.group-0 {
+      order: 2; /* Змінюємо порядок групи */
+  }
+
+  .gallery-group.group-1 {
+      order: 1; /* Група 1 буде на першому місці */
+  }
+
+  .gallery-group.group-2 {
+      order: 3; /* Група 2 буде на третьому місці */
+  }
+}

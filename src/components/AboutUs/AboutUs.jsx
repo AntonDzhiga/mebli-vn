@@ -13,14 +13,14 @@ const AboutUs = () => {
 
         <div className="about-us__text-contain">
           {/* Заголовок для великих екранів */}
-          <h3 className="about-us__title-desktop">Про нас</h3>
-          <p className="about-us__subtitle">Меблі ВН</p>
-          <span className="about-us__description">
+          <h2 className="about-us__title-desktop">Про нас</h2>
+          <h3 className="about-us__subtitle">Меблі ВН</h3>
+          <p className="about-us__description">
             Ми спеціалізуємося на створенні функціональних і естетично привабливих
             приміщень для житлових і комерційних клієнтів. Співпрацюючи з
             архітекторами, будівельниками та домовласниками, ми перетворюємо
             інтер’єри на зручне та гармонійне середовище.
-          </span>
+          </p>
         </div>
         
         <div className="about-us__image-desktop">

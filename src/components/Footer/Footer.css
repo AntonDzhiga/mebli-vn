@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     background: #acacac;
-    padding: 20px; /* Щоб створити відступи навколо контенту */
+    padding: 100px 0;
 }
 
 .footer__contact-list {
@@ -16,7 +16,7 @@
     border-radius: 10px;
     padding: 10px 20px;
     margin-bottom: 10px;
-    text-align: center; /* Вирівнювання тексту в середині */
+    text-align: center;
 }
 
 .footer__contact-item img {
@@ -26,16 +26,16 @@
 .footer__title-heading,
 .working-hours__heading {
     font-size: 42px;
-    text-align: center; /* Центрування заголовків */
+    text-align: center;
 }
 
 .working-hours__table {
     border-radius: 10px;
     background: #cacaca;
     width: 100%;
-    border-collapse: separate; /* Щоб border-spacing працював */
-    border-spacing: 20px 10px; /* Горизонтальний і вертикальний відступи */
-    margin: 0 auto; /* Центрування таблиці */
+    border-collapse: separate;
+    border-spacing: 20px 10px;
+    margin: 0 auto;
 }
 
 .working-hours__row td:nth-child(1) {
@@ -50,17 +50,17 @@
 
 @media (max-width: 992px) {
     .footer {
-        flex-direction: column; /* Розташування в колонку */
-        align-items: center; /* Центрування по горизонталі */
-        text-align: center; /* Центрування тексту */
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
     }
 
     .footer__contact, .footer__working-hours {
-        width: 100%; /* Контейнер займає всю ширину */
-        max-width: 400px; /* Обмеження ширини */
+        width: 100%;
+        max-width: 400px;
     }
 
     .working-hours__table {
-        width: auto; /* Таблиця адаптується до вмісту */
+        width: auto;
     }
 }
