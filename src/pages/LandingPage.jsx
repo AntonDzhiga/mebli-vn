@@ -1,4 +1,5 @@
 import React from 'react'
+import './LandingPage.css'
 import AboutUs from '../components/AboutUs/AboutUs';
 import OurService from '../components/OurService/OurService';
 import Gallery from '../components/Gallery/Gallery';

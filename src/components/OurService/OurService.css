@@ -1,15 +1,16 @@
-@import '../../shared/styles/variables/fonts.css';
 
 /* Основний стиль для контейнера */
 .services {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 70px;
 }
 
 .services__heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services__title{
   font-size: var(--font-size-title);
   font-family: var(--font-primary);
   text-transform: uppercase;

@@ -8,8 +8,10 @@ import {
 const OurService = () => {
   return (
     <div className="services">
-        <h2 className="services__heading">Послуги</h2>
-        <h3 className="services__subtitle">Ми пропонуємо</h3>
+            <div className="services__heading">
+                <h2 className="services__title">Послуги</h2>
+                <h3 className="services__subtitle">Ми пропонуємо</h3>
+            </div>
         <div className="services__wrapper">
             <div className="services__list-container">
                 <ul className="services__list">
