@@ -1,6 +1,9 @@
 import React from "react";
 import "./AboutUs.css";
-import { torg_left } from "../../assets/FurnitureImages";
+import { 
+  torg_left,
+  our_servise_second
+ } from "../../assets/FurnitureImages";
 
 const AboutUs = () => {
   return (
@@ -8,7 +11,7 @@ const AboutUs = () => {
       <div className="about-us__container">
         {/* Зображення для великих екранів */}
         <div className="about-us__image-desktop">
-          <img src={torg_left} alt="Про нас" />
+          <img src={our_servise_second} alt="Про нас" />
         </div>
 
         <div className="about-us__text-contain">
@@ -35,7 +38,7 @@ const AboutUs = () => {
         {/* Спеціальне зображення для планшетів/маленьких екранів */}
         <div className="about-us__image_tablet-visible-tablet">
           <div className="about-us__image_tablet-item">
-            <img src={torg_left} alt="Про нас" />
+            <img src={our_servise_second} alt="Про нас" />
           </div>
           <div className="about-us__image_tablet-item">
             <img src={torg_left} alt="Про нас" />

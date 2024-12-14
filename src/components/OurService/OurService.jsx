@@ -1,6 +1,9 @@
 import React from "react";
 import "./OurService.css";
-import { torg_left } from "../../assets/FurnitureImages";
+import { 
+    home_blum,
+    our_servise_second
+ } from "../../assets/FurnitureImages";
 
 const OurService = () => {
   return (
@@ -22,10 +25,10 @@ const OurService = () => {
             </div>
             <div className="services__images">
                 <div className="services__image-item">
-                    <img src={torg_left} alt="Про нас" />
+                    <img src={our_servise_second} alt="Про нас" />
                 </div>
                 <div className="services__image-item">
-                    <img src={torg_left} alt="Про нас" />
+                    <img src={home_blum} alt="Про нас" />
                 </div>
             </div>
         </div>
