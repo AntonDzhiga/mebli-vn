@@ -1,11 +1,12 @@
 import {
-  torg_left,
   torg_showcase,
   home_up,
   home_left,
   home_right,
   home_down_second,
-  torg_gallery_second
+  torg_gallery_mirror,
+  torg_gallery_reception,
+  torg_gallery_beer_market
 } from "../../assets/FurnitureImages";
 
 const galleryData = [
@@ -26,12 +27,12 @@ const galleryData = [
     title: "Торгівельне обладнання та офісні меблі",
     subtitle: "Індивідуальні проекти",
     images: [
-      [{ src: torg_gallery_second, alt: "Офіс 1" }],
+      [{ src: torg_gallery_mirror, alt: "Тумба з зеркалом" }],
       [
-        { src: torg_left, alt: "Офіс 2" },
-        { src: torg_showcase, alt: "Офіс 3" },
+        { src: torg_gallery_reception, alt: "Ресепшин" },
+        { src: torg_gallery_beer_market, alt: "Магазин" },
       ],
-      [{ src: torg_showcase, alt: "Офіс 4" }],
+      [{ src: torg_showcase, alt: "шафа з аідсвіткою" }],
     ],
   },
 ];

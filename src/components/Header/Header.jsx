@@ -13,7 +13,7 @@ const Header = () => {
             <img src={header_first_image} alt="Меблі для дому" />
           </div>
           <div className='header__text-container'>
-            <h1 className='header__text'>Меблі для дому</h1>
+            <h2 className='header__text'>Меблі для дому</h2>
           </div>
         </div>
         
@@ -23,7 +23,7 @@ const Header = () => {
             <img src={header_second_image} alt="Меблі для магазину" />
           </div>
           <div className='header__text-container'>
-            <h1 className='header__text'>Торгове обладнання</h1>
+            <h2 className='header__text'>Торгове обладнання</h2>
           </div>
         </div>
 

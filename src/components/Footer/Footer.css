@@ -1,90 +1,82 @@
 .footer {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #474747;
+}
+
+.footer__logo  {
+    margin-left: 100px;
+}
+
+.footer__logo img {
+    width: 200px;
+}
+
+.footer__container{
     display: flex;
     justify-content: space-evenly;
-    background: #acacac;
-    padding: 100px 0;
 }
 
 .footer__title-heading{
-    font-size: var(--font-size-title);
+    font-size: var(--font-size-subtitle);
     font-family: var(--font-primary);
-    text-transform: uppercase;
     font-weight: 700;
     font-style: normal;
-    font-kerning: none;
-    text-decoration: none;
     margin-bottom: 30px;
+    color: white;
   }
 
 .working-hours__heading{
-    font-size: var(--font-size-title);
+    font-size: var(--font-size-subtitle);
     font-family: var(--font-primary);
-    text-transform: uppercase;
     font-style: normal;
-    font-kerning: none;
-    text-decoration: none;
     margin-bottom: 30px;
+    color: white;
 }
 
 .footer__contact-list {
-    list-style-type: none;
+    list-style: none;
 }
 
 .footer__contact-item {
-    background: #acacac;
-    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    height: 50px;
+    background: #cacaca;
     border-radius: 50px;
     padding: 10px 20px;
     margin-bottom: 10px;
-    text-align: center;
+    text-decoration: none;
+}
+.footer__contact-item a{
+    text-decoration: none;
+    color: black;
 }
 
 .footer__contact-item img {
     width: 32px;
 }
 
-.footer__title-heading,
-.working-hours__heading {
-    font-size: 42px;
-    text-align: center;
-}
-
-.footer__working-hours{
-    text-align: center;
-}
-
-.working-hours__table {
-    border: 2px solid black;
-    border-radius: 50px;
-    background: #cacaca;
-    max-width: 320px;
-    height: 170px;
-    margin: 0 auto;
+.working-hours__list-contain {
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
+    align-items: center;
 }
 
-.working-hours__cell {
-    padding: 10px; /* Внутрішні відступи */
-    font-size: 16px; /* Розмір тексту */
-    font-weight: 500; /* Товщина тексту */
-}
-
-
-.working-hours__row td:nth-child(1) {
-    text-align: center;
-    font-weight: bold;
-    color: #555;
-}
-
-.working-hours__row td:nth-child(2) {
-    color: #333;
-}
-
-.footer__contact, .footer__working-hours {
-    max-width: 500px;
+.working-hours__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+    height: 230px;
+    border-radius: 25px;
+    background: #cacaca;
+    list-style: none;
+    padding-left: 30px;
 }
 
 
@@ -92,18 +84,32 @@
     .footer {
         flex-direction: column;
         align-items: center;
-        text-align: center; 
+        text-align: center;
+        height: 750px;
     }
+    .footer__logo  {
+        margin: 0 auto;
+    }
+    
+    .footer__container{
+        display: flex;
+        flex-direction: column;
+    }
+
     .footer__title{
         width: 90%;
         margin: 0 auto;
     }
     .footer__working-hours {
-        order: 1;
-        margin-bottom: 50px;
+        order: 2;
+        
+        margin-top: 25px;
     }
     .footer__contact {
-        order: 2;
+        order: 1;
+    }
+    .working-hours__list {
+        padding-left: 0;
     }
     
 }

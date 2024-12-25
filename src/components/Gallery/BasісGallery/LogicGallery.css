@@ -10,11 +10,6 @@
   margin-bottom: 10px;
 }
 
-.gallery-content {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
 .gallery__title{
   font-size: var(--font-size-title);
   font-family: var(--font-primary);
@@ -30,24 +25,38 @@
   margin: 5px 0 30px;
 }
 
+.gallery-content {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch; /* Вирівнює всі групи по однаковій висоті */
+
+}
+
 .gallery-group {
   display: flex;
   flex-direction: column;
+  gap: 10px; /* Відстань між зображеннями у групі */
+}
+
+/* Чітке налаштування ширини для кожної групи */
+.gallery-group.group-0 {
+  width: 35%; /* Перша група - більша */
+}
+
+.gallery-group.group-1 {
+  width: 29%; /* Друга група - менша */
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery-group.group-2 {
+  width: 35%; /* Третя група - більша */
 }
 
 .gallery-item img {
-  width: 100%;
-  height: auto;
+  width: 100%; /* Картинки займають всю ширину своєї групи */
   border-radius: 5px;
-}
-
-/* Стилі для кожного зображення, використовуючи унікальні класи */
-.image-1-0 {
-  max-width: 100%;
-}
-
-.image-1-1 {
-  max-width: 100%;
 }
 
 /* Адаптивні стилі для маленьких екранів */
@@ -57,26 +66,26 @@
       align-items: center;
   }
 
-  .gallery-group {
-  }
-
   .gallery-group.group-1{
       display: flex;
-      flex-direction: row; /* Розташовуємо картинки в ряд */
+      flex-direction: row;
       justify-content: space-between;
-      gap: 10px; /* Між картинками буде проміжок */
+      gap: 10px;
   }
 
-  /* Зміна порядку елементів на маленьких екранах */
   .gallery-group.group-0 {
-      order: 2; /* Змінюємо порядок групи */
+    width: 100%; 
+    order: 2;
   }
-
+  
   .gallery-group.group-1 {
-      order: 1; /* Група 1 буде на першому місці */
+    flex-direction: column;
+    width: 100%;
+    order: 1;
   }
 
   .gallery-group.group-2 {
-      order: 3; /* Група 2 буде на третьому місці */
+    width: 100%;
+    order: 3;
   }
 }

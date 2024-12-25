@@ -1,8 +1,8 @@
 import React from "react";
 import "./AboutUs.css";
 import { 
-  torg_left,
-  our_servise_second
+  home_chiken,
+  torg_servise_napoleon_cafe
  } from "../../assets/FurnitureImages";
 
 const AboutUs = () => {
@@ -11,7 +11,7 @@ const AboutUs = () => {
       <div className="about-us__container">
         {/* Зображення для великих екранів */}
         <div className="about-us__image-desktop">
-          <img src={our_servise_second} alt="Про нас" />
+          <img src={torg_servise_napoleon_cafe} alt="Про нас" />
         </div>
 
         <div className="about-us__text-contain">
@@ -19,15 +19,12 @@ const AboutUs = () => {
           <h2 className="about-us__title-desktop">Про нас</h2>
           <h3 className="about-us__subtitle">Меблі ВН</h3>
           <p className="about-us__description">
-            Ми спеціалізуємося на створенні функціональних і естетично привабливих
-            приміщень для житлових і комерційних клієнтів. Співпрацюючи з
-            архітекторами, будівельниками та домовласниками, ми перетворюємо
-            інтер’єри на зручне та гармонійне середовище.
+            Ми спеціалізуємося на виготовленні функціональних та естетично привабливих меблів на замовлення для житлових і комерційних приміщень. Співпрацюючи з дизайнерами, архітекторами та клієнтами, ми створюємо меблі, які ідеально доповнюють інтер’єр і забезпечують комфорт.
           </p>
         </div>
         
         <div className="about-us__image-desktop">
-          <img src={torg_left} alt="Про нас" />
+          <img src={home_chiken} alt="Про нас" />
         </div>
 
 
@@ -38,10 +35,10 @@ const AboutUs = () => {
         {/* Спеціальне зображення для планшетів/маленьких екранів */}
         <div className="about-us__image_tablet-visible-tablet">
           <div className="about-us__image_tablet-item">
-            <img src={our_servise_second} alt="Про нас" />
+            <img src={torg_servise_napoleon_cafe} alt="Про нас" />
           </div>
           <div className="about-us__image_tablet-item">
-            <img src={torg_left} alt="Про нас" />
+            <img src={home_chiken} alt="Про нас" />
           </div>
         </div>
       </div>

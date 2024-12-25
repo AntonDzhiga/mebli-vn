@@ -2,7 +2,7 @@ import React from "react";
 import "./OurService.css";
 import { 
     home_blum,
-    our_servise_second
+    torg_gallery_napoleon
  } from "../../assets/FurnitureImages";
 
 const OurService = () => {
@@ -27,7 +27,7 @@ const OurService = () => {
             </div>
             <div className="services__images">
                 <div className="services__image-item">
-                    <img src={our_servise_second} alt="Про нас" />
+                    <img src={torg_gallery_napoleon} alt="Про нас" />
                 </div>
                 <div className="services__image-item">
                     <img src={home_blum} alt="Про нас" />
