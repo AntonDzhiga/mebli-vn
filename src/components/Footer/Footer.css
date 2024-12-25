@@ -54,6 +54,11 @@
 }
 .footer__contact-item a{
     text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.footer__contact-item a:hover{
+    text-decoration: underline;
     color: black;
 }
 
