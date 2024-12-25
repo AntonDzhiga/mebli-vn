@@ -36,6 +36,10 @@
     color: white;
 }
 
+.footer__title{
+    font-family: var(--font-primary);
+}
+
 .footer__contact-list {
     list-style: none;
 }
@@ -73,6 +77,7 @@
 }
 
 .working-hours__list {
+    font-family: var(--font-primary);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,5 +121,10 @@
     .working-hours__list {
         padding-left: 0;
     }
+
+    .footer__contact-item a:hover{
+        text-decoration: none;
+    }
+    
     
 }

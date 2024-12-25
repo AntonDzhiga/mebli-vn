@@ -2,6 +2,7 @@ import React from 'react';
 import "./Footer.css";
 import {
   logo_mebli_vn,
+  facebook,
   instagram
 } from "../../assets/Footer";
 
@@ -18,15 +19,15 @@ const Footer = () => {
           <ul className='footer__contact-list'>
             <li className='footer__contact-item'><a href="tel:+380966727311">+38 (096) 672 73 11</a></li>
             <li className='footer__contact-item'><a href="tel:+380950517624">+38 (095) 051 76 24</a></li>
-            <li className='footer__contact-item'>hello@reallygreatsite.com</li>
+            <li className='footer__contact-item'>maisternyamebleva@gmail.com</li>
             <li className='footer__contact-item'> Ми в соцмережах
               <div>
                 <a href="https://www.instagram.com/maisternyamebli_vn/" target="_blank" rel="noopener noreferrer">
                   <img src={instagram} alt="Instagram"/>
                 </a>
 
-                <a href="https://www.instagram.com/maisternyamebli_vn/" target="_blank" rel="noopener noreferrer">
-                  <img src={instagram} alt="Instagram"/>
+                <a href="https://www.facebook.com/profile.php?id=100094190306126&locale=uk_UA" target="_blank" rel="noopener noreferrer">
+                  <img src={facebook} alt="Facebook"/>
                 </a>
               </div>
             </li>
