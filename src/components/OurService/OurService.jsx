@@ -27,10 +27,10 @@ const OurService = () => {
             </div>
             <div className="services__images">
                 <div className="services__image-item">
-                    <img src={torg_gallery_napoleon} alt="Про нас" />
+                    <img src={home_blum} alt="Про нас" />
                 </div>
                 <div className="services__image-item">
-                    <img src={home_blum} alt="Про нас" />
+                    <img src={torg_gallery_napoleon} alt="Про нас" />
                 </div>
             </div>
         </div>

@@ -24,7 +24,7 @@ const galleryData = [
   },
   
   {
-    title: "Торгівельне обладнання та офісні меблі",
+    title: "Торгове обладнання та офісні меблі",
     subtitle: "Індивідуальні проекти",
     images: [
       [{ src: torg_gallery_mirror, alt: "Тумба з зеркалом" }],
