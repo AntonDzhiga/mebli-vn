@@ -1,15 +1,15 @@
-import torg_showcase from './torg_gallery_4.png';
-import torg_gallery_mirror from './Skin on mirror.png';
-import torg_gallery_napoleon from './cafe.jpg';
-import torg_gallery_beer_market from './beer_store.jpg';
-import torg_gallery_reception from './reception.jpg';
-import torg_servise_napoleon_cafe from './NapoleonMain.png';
-import home_blum from './drawer.png';
-import home_down_second from './galleryHome_tablec-closet.png';
-import home_up from './GalleryHomeFirst.png';
-import home_right from './GalleryHomeThird.png';
-import home_left from './galleryHomeFourth.png';
-import home_chiken from './chiken.jpg';
+import torg_showcase from './torg_gallery_4.webp';
+import torg_gallery_mirror from './Skin on mirror.webp';
+import torg_gallery_napoleon from './cafe.webp';
+import torg_gallery_beer_market from './beer_store.webp';
+import torg_gallery_reception from './reception.webp';
+import torg_servise_napoleon_cafe from './NapoleonMain.webp';
+import home_blum from './drawer.webp';
+import home_down_second from './galleryHome_tablec-closet.webp';
+import home_up from './GalleryHomeFirst.webp';
+import home_right from './GalleryHomeThird.webp';
+import home_left from './galleryHomeFourth.webp';
+import home_chiken from './chiken.webp';
 
 export {
     torg_showcase,
