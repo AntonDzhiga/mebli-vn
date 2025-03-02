@@ -1,5 +1,5 @@
 import React from "react";
-import "./AboutUs.css";
+import "./AboutUs.scss";
 import { 
   home_chiken,
   torg_servise_napoleon_cafe

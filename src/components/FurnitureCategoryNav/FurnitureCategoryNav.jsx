@@ -1,5 +1,5 @@
 import React from 'react';
-import './FurnitureCategoryNav.css';
+import './FurnitureCategoryNav.scss';
 import { header_first_image, header_second_image } from "../../assets/Header";
 
 const FurnitureCategoryItem = ({ image, textTitle, textContent, reversed }) => {

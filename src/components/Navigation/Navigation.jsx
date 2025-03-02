@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import "../Header/Header.css";
+import "../Header/Header";
 
 
 const Navigation = ({ isOpen }) => {

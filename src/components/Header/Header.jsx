@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Navigation from '../Navigation/Navigation';
-import "../Header/Header.css";
+import "../Header/Header.scss";
 import {
   header_logo
 } from "../../assets/Header"

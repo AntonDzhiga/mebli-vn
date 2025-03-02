@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Footer.css";
+import "./Footer.scss";
 import {
   logo_mebli_vn,
   facebook,

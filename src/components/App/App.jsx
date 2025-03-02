@@ -2,7 +2,7 @@ import Gallery from '../../pages/Gallery';
 import Layout from '../../pages/Layout';
 import Main from '../../pages/Main';
 import NotFound from '../../pages/not-found';
-import './App.css';
+import './App.scss';
 import { Route, Routes } from 'react-router-dom';
 
 

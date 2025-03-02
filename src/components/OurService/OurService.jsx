@@ -1,5 +1,5 @@
 import React from "react";
-import "./OurService.css";
+import "./OurService.scss";
 import { 
     home_blum,
     torg_gallery_napoleon

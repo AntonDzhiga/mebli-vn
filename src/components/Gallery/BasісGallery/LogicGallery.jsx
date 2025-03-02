@@ -1,5 +1,5 @@
 import React from "react";
-import './LogicGallery.css';
+import './LogicGallery.scss';
 
 const BasicGallery = ({ title, subtitle, images }) => {
   return (
