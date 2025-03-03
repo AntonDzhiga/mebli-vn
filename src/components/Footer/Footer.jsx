@@ -1,7 +1,7 @@
 import React from "react";
-import "./Footer.scss";
 import { logo_mebli_vn, facebook, instagram } from "../../assets/Footer";
 import { useTranslation } from "react-i18next";
+import "./Footer.scss";
 
 const Footer = () => {
   const { t } = useTranslation();
