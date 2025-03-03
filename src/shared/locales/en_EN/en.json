@@ -1,0 +1,17 @@
+{
+  "navigation": {
+    "home": "Home",
+    "catalog": "Catalog"
+  },
+
+  "footer": {
+    "contactUs": "Contact Us",
+    "socialMedia": "We are on social media",
+    "workingHours": "Working Hours",
+    "weekdays": "Monday to Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday - Closed"
+  }
+}
+  
+    

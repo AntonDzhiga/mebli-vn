@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navigation from '../Navigation/Navigation';
-import "../Header/Header.scss";
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
+import "./Header.scss";
 import {
   header_logo
 } from "../../assets/Header"
@@ -29,6 +30,7 @@ const Header = () => {
                     </label>
                 </div>
                 <Navigation isOpen={isBurgerMenuOpen}/>
+                <LanguageSwitcher className="language-switcher-position"/>
             </div>
         </div>
     );

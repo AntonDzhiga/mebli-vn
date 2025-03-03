@@ -1,0 +1,15 @@
+{
+  "navigation": {
+    "home": "Головна",
+    "catalog": "Каталог"
+  },
+
+  "footer": {
+    "contactUs": "Звертайтесь до нас",
+    "socialMedia": "Ми в соцмережах",
+    "workingHours": "Робочий час",
+    "weekdays": "З понеділка по п’ятницю",
+    "saturday": "Субота",
+    "sunday": "Неділя - вихідний"
+  }
+}

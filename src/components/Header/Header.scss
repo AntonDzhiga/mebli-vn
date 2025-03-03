@@ -30,14 +30,16 @@
 }
 
 
-@media (max-width: 768px) {
+.burger-menu {
+    display: none;
+    position: absolute;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {    
     .burger-menu {
-        display: block;
-    }
-    .nav-header {
-        display: none;
-    }
-    .nav-header.open {
         display: block;
     }
 
@@ -95,63 +97,4 @@
         transition-duration: .5s;
         transform: rotate(180deg);
       }
-    
-    
-}
-
-
-
-.nav-header {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-header li {
-    display: inline-block;
-}
-
-.nav-link {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    transition: color 0.3s ease-in-out;
-}
-
-.nav-link:hover, .nav-link.active {
-    color: #f4a261;
-}
-
-.burger-menu {
-    display: none;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    z-index: 1000;
-}
-
-@media (max-width: 768px) {
-    .burger-menu {
-        display: block;
-    }
-
-    .nav-header {
-        display: none;
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
-        padding: 10px;
-    }
-
-    .nav-header.open {
-        display: flex;
-        z-index: 1;
-    }
-    
 }
