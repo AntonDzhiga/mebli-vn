@@ -1,5 +1,5 @@
 import React from "react";
-import { logo_mebli_vn, facebook, instagram } from "../../assets/Footer";
+import { header_logo, facebook, instagram } from "../../assets/Footer";
 import { useTranslation } from "react-i18next";
 import "./Footer.scss";
 
@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer__logo">
-        <img src={logo_mebli_vn} alt="Logo" />
+        <img src={header_logo} alt="Logo" />
       </div>
       <div className="footer__container">
         <div className="footer__contact">

@@ -12,9 +12,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 900px;
-    width: 100%;
-    height: 350px;
+    max-width: 1200px;
+    width: 90%;
+    height: 450px;
     position: relative;
 }
 
@@ -29,8 +29,8 @@
 }
 
 .furniture-category-nav__image {
-    width: 400px;
-    height: 300px;
+    width: 600px;
+    height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,29 +53,17 @@
     border-radius: 10px;
     text-align: center;
     z-index: 2;
+    position: absolute;
 }
+.furniture-category-nav__content:not(.reversed) .furniture-category-nav__text {
+    right: 10px;
+}
+
+.furniture-category-nav__content.reversed .furniture-category-nav__text {
+    left: 10px;
+}
+
 
 /* На маленьких екранах (до 768px) текст накладається на картинку */
 @media (max-width: 768px) {
-    .furniture-category-nav__content {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
-
-    .furniture-category-nav__text {
-        position: absolute;
-        z-index: 2;
-        background: rgba(62, 78, 89, 0.8);
-        padding: 15px;
-    }
-
-    .furniture-category-nav__content:not(.reversed) .furniture-category-nav__text {
-        right: 10px;
-    }
-
-    .furniture-category-nav__content.reversed .furniture-category-nav__text {
-        left: 10px;
-    }
 }

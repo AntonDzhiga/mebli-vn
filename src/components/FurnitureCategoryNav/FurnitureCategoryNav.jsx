@@ -11,6 +11,7 @@ const FurnitureCategoryItem = ({ image, textTitle, textContent, reversed }) => {
       <div className="furniture-category-nav__text">
         <h2>{textTitle}</h2>
         <p>{textContent}</p>
+        <button className="furniture-category-nav__button">Learn More</button>
       </div>
     </div>
   );

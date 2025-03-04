@@ -10,6 +10,7 @@ import home_up from './GalleryHomeFirst.webp';
 import home_right from './GalleryHomeThird.webp';
 import home_left from './galleryHomeFourth.webp';
 import home_chiken from './chiken.webp';
+import furniture_category_home from './FurnitureCategoryHome.png';
 
 export {
     torg_showcase,
@@ -23,5 +24,6 @@ export {
     home_up,
     home_right,
     home_left,
-    home_down_second
+    home_down_second,
+    furniture_category_home
 }
