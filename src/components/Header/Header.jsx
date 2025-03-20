@@ -6,8 +6,6 @@ import {
   header_logo
 } from "../../assets/Header"
 
-
-
 const Header = () => {
     const [isBurgerMenuOpen, setIsBurgerMenuOpen] = useState(false);
 

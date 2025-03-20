@@ -25,6 +25,14 @@ const Navigation = ({ isOpen }) => {
             {t("navigation.catalog")}
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/contacts"
+            className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+          >
+            {t("navigation.contacts")}
+          </NavLink>
+        </li>
       </ul>
     </div>
   );

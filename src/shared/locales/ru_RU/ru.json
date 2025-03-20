@@ -1,7 +1,8 @@
 {
   "navigation": {
     "home": "Главная",
-    "catalog": "Каталог"
+    "catalog": "Каталог",
+    "contacts": "Контакты"
   },
 
   "footer": {

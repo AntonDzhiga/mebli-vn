@@ -1,5 +1,5 @@
 import React from "react";
-import { header_logo, facebook, instagram } from "../../assets/Footer";
+import { header_logo, facebook, instagram } from "../../assets/icons";
 import { useTranslation } from "react-i18next";
 import "./Footer.scss";
 

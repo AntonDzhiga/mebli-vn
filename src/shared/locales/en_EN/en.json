@@ -1,7 +1,8 @@
 {
   "navigation": {
     "home": "Home",
-    "catalog": "Catalog"
+    "catalog": "Catalog",
+    "contacts": "Contacts"
   },
 
   "footer": {
