@@ -70,8 +70,6 @@ const ContactUs = () => {
           <form className="contact-us__form-container" onSubmit={handleSubmit}>
             <div className="contact-us__form-group">
               <input type="text" name="name" placeholder="Name" className="contact-us__input" value={formData.name} onChange={handleChange} required />
-            </div>
-            <div className="contact-us__form-group">
               <input type="tel" name="phone" placeholder="Phone" className="contact-us__input" value={formData.phone} onChange={handleChange} required />
               <input type="email" name="email" placeholder="Email" className="contact-us__input" value={formData.email} onChange={handleChange} required />
             </div>
